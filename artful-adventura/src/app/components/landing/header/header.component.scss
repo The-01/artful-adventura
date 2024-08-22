@@ -1,0 +1,33 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.bg-gradient-to-r {
+	background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+
+.transition-transform {
+	transition: transform 0.3s ease-in-out;
+}
+
+.transition-colors {
+	transition: color 0.3s ease-in-out;
+}
+
+.transform:hover {
+	transform: scale(1.1);
+}
+
+.text-light-gray {
+	color: #ecf0f1;
+}
+
+.hover\:text-gold:hover {
+	color: #f39c12;
+}

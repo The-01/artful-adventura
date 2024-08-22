@@ -1,0 +1,152 @@
+<!-- Banner Section -->
+<div class="banner bg-cover bg-center h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full relative overflow-hidden mt-20">
+	<!-- Banner Image -->
+	<!-- <img src="banner.jpg" alt="Banner Image" class="absolute inset-0 w-full h-full object-cover z-0" /> -->
+	<!-- Banner Video -->
+	<video alt="Banner Image" src="videos/nature-video2.mp4" class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted></video>
+
+	<!-- Overlay for text readability (optional) -->
+	<div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+
+	<!-- Main Heading -->
+	<div class="relative z-20 flex items-center justify-center h-full flex-col">
+		<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-inter text-white text-center">Discover the Beauty of Pakistan</h2>
+		<p class="mt-4 text-sm sm:text-base md:text-lg font-inter font-light text-white text-center">
+			"Embark on a journey where every path leads to wonder and every moment is an adventure."
+		</p>
+	</div>
+</div>
+
+<div class="landing-page mx-6 md:mx-6 lg:mx-12">
+	<!-- Catchy Header -->
+	<div class="text-center mt-12 mb-4 md:mt-16 md:mb-6">
+		<h2 class="text-2xl sm:text-3xl md:text-4xl font-moranga font-bold text-gray-800">Explore the Hidden Gems of Pakistan</h2>
+		<p class="mt-4 text-lg sm:text-xl md:text-2xl font-moranga text-gray-600">Unveil the Wonders of Pakistan's Landscape</p>
+	</div>
+	<!-- Main Content Section -->
+	<div class="main-content p-6 md:p-8 lg:p-12">
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
+			<div class="card bg-white/30 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white/20 transition-shadow duration-300 hover:border-gray-300">
+				<div class="w-full relative mx-auto h-40 overflow-hidden rounded-t-lg">
+					<img src="lahore.jpg" alt="Place 1" class="w-full h-40 relative object-cover z-0 rounded-t-lg transition-all duration-300 hover:scale-110" />
+				</div>
+				<!-- <img src="place1.jpg" alt="Place 1" class="h-40 w-full object-cover rounded-t-lg transition-opacity duration-300 hover:opacity-90" /> -->
+				<h3 class="mt-4 text-xl font-semibold text-gray-800">Lahore</h3>
+				<p class="mt-2 text-gray-600 line-clamp-3">
+					Lahore, the cultural heart of Pakistan, is a city steeped in history and brimming with vibrant life. Known for its stunning Mughal architecture, including the
+					iconic Badshahi Mosque and Lahore Fort, the city offers a glimpse into the grandeur of a bygone era. The bustling streets are filled with the aroma of
+					traditional cuisine, while the gardens, like Shalimar Bagh, provide serene green spaces amidst the urban sprawl.
+				</p>
+				<a
+					routerLink="/place-detail"
+					class="mt-4 text-sm font-semibold text-center inline-flex items-center bg-yellow-500 text-white p-2 rounded-lg hover:bg-gradient-to-r hover:bg-yellow-600 transition duration-300"
+				>
+					More
+					<svg class="w-6 h-6 text-white ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+					</svg>
+				</a>
+			</div>
+
+			<!-- Repeat similar cards for other places -->
+			<div class="card bg-white/30 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white/20 transition duration-300 hover:border-gray-300">
+				<div class="w-full relative mx-auto h-40 overflow-hidden rounded-t-lg">
+					<img src="naran.jpg" alt="Place 2" class="w-full h-40 relative object-cover z-0 rounded-t-lg transition-all duration-300 hover:scale-110" />
+				</div>
+				<h3 class="mt-4 text-xl font-semibold text-gray-800">Naran</h3>
+				<p class="mt-2 text-gray-600 line-clamp-3">
+					Naran, nestled in the scenic Kaghan Valley, is a picturesque town surrounded by towering peaks and lush greenery. It serves as a gateway to the stunning Lake
+					Saiful Malook, renowned for its crystal-clear waters and breathtaking views. The town is a haven for nature lovers, offering numerous trekking routes, glacial
+					streams, and a serene atmosphere. Naran's cool climate and pristine landscapes make it a popular destination for tourists seeking an escape into nature's
+					embrace.
+				</p>
+				<a
+					routerLink="/place-detail"
+					class="mt-4 text-sm font-semibold text-center inline-flex items-center bg-yellow-500 text-white p-2 rounded-lg hover:bg-gradient-to-r hover:bg-yellow-600 transition duration-300"
+				>
+					More
+					<svg class="w-6 h-6 text-white ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+					</svg>
+				</a>
+			</div>
+			<div class="card bg-white/30 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white/20 transition duration-300 hover:border-gray-300">
+				<div class="w-full relative mx-auto h-40 overflow-hidden rounded-t-lg">
+					<img src="bahawalpur.jpg" alt="Place 3" class="w-full h-40 relative object-cover z-0 rounded-t-lg transition-all duration-300 hover:scale-110" />
+				</div>
+				<h3 class="mt-4 text-xl font-semibold text-gray-800">Bahawalpur</h3>
+				<p class="mt-2 text-gray-600 line-clamp-3">
+					Bahawalpur, a city rich in heritage, is home to grand palaces, historic forts, and lush gardens. The stunning Noor Mahal and Derawar Fort are testaments to its
+					regal past. Nearby, Uch Sharif, an ancient city, is famous for its exquisite Sufi shrines adorned with intricate tile work. This region, with its blend of
+					history, culture, and architectural beauty, offers a glimpse into the spiritual and royal legacy of Pakistan's southern Punjab.
+				</p>
+				<a
+					routerLink="/place-detail"
+					class="mt-4 text-sm font-semibold text-center inline-flex items-center bg-yellow-500 text-white p-2 rounded-lg hover:bg-gradient-to-r hover:bg-yellow-600 transition duration-300"
+				>
+					More
+					<svg class="w-6 h-6 text-white ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+					</svg>
+				</a>
+			</div>
+			<div class="card bg-white/30 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white/20 transition duration-300 hover:border-gray-300">
+				<div class="w-full relative mx-auto h-40 overflow-hidden rounded-t-lg">
+					<img src="mansehra.jpg" alt="Place 4" class="w-full h-40 relative object-cover z-0 rounded-t-lg transition-all duration-300 hover:scale-110" />
+				</div>
+				<h3 class="mt-4 text-xl font-semibold text-gray-800">Mansehra</h3>
+				<p class="mt-2 text-gray-600 line-clamp-3">
+					Mansehra, nestled in the scenic hills of Khyber Pakhtunkhwa, is a gateway to some of Pakistan's most breathtaking landscapes. The city is known for its lush
+					valleys, crystal-clear rivers, and proximity to famous destinations like Kaghan Valley and Babusar Pass. Mansehra's cool climate and serene environment make it
+					a perfect retreat for nature enthusiasts and adventure seekers alike.
+				</p>
+				<a
+					routerLink="/place-detail"
+					class="mt-4 text-sm font-semibold text-center inline-flex items-center bg-yellow-500 text-white p-2 rounded-lg hover:bg-gradient-to-r hover:bg-yellow-600 transition duration-300"
+				>
+					More
+					<svg class="w-6 h-6 text-white ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+					</svg>
+				</a>
+			</div>
+			<div class="card bg-white/30 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white/20 transition duration-300 hover:border-gray-300">
+				<div class="w-full relative mx-auto h-40 object-cover overflow-hidden rounded-t-lg">
+					<img src="balochistan.jpg" alt="Place 5" class="w-full h-40 object-cover relative z-0 rounded-t-lg transition-all duration-300 hover:scale-110" />
+				</div>
+				<h3 class="mt-4 text-xl font-semibold text-gray-800">Balochistan</h3>
+				<p class="mt-2 text-gray-600 line-clamp-3">
+					Balochistan, Pakistan's largest province by area, is a land of rugged beauty and cultural richness. The region boasts stunning landscapes, from the vast deserts
+					and dramatic mountain ranges to the pristine beaches along the Arabian Sea. With its unique cultural heritage, including ancient archaeological sites and
+					traditional crafts, Balochistan offers a journey into the heart of Pakistan's diverse and untamed frontier.
+				</p>
+				<a
+					routerLink="/place-detail"
+					class="mt-4 text-sm font-semibold text-center inline-flex items-center bg-yellow-500 text-white p-2 rounded-lg hover:bg-gradient-to-r hover:bg-yellow-600 transition duration-300"
+				>
+					More
+					<svg class="w-6 h-6 text-white ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Contact Us Section -->
+<div class="mt-16 bg-yellow-500 p-6 rounded-lg shadow-lg flex flex-col lg:flex-row gap-6 -mx-6">
+	<!-- Text Section -->
+	<div class="flex-1 p-6 flex items-center justify-center bg-transparent">
+		<div class="text-center lg:text-left">
+			<h2 class="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+			<p class="text-gray-600 text-lg">
+				We're here to help and answer any questions you might have. Feel free to reach out to us through the form on the right, or contact us directly through our email or
+				phone. Our team is dedicated to providing you with the best service and support. Let us know how we can assist you!
+			</p>
+		</div>
+	</div>
+
+	<!-- Contact Form -->
+	<app-contact-us></app-contact-us>
+</div>

@@ -1,0 +1,236 @@
+<div class="bg-white mt-20">
+	<div class="container mx-auto px-8 py-12">
+		<!-- Breadcrumb Navigation -->
+		<nav class="text-xs sm:text-sm font-medium text-gray-500 mb-8 sm:mb-8">
+			<ul class="flex space-x-1 sm:space-x-2">
+				<li>
+					<a href="#" class="text-gray-700 hover:text-gold transition-colors duration-300">Tourist Spot</a>
+				</li>
+				<li>
+					<span class="text-gray-400">></span>
+				</li>
+				<li>
+					<span class="text-gray-700">Lahore</span>
+				</li>
+			</ul>
+		</nav>
+		<div class="flex flex-wrap -mx-4">
+			<!-- Place Images Section -->
+			<div class="w-full md:w-1/2 px-4 mb-8">
+				<!-- Main Image -->
+				<img src="{{ mainImageSrc }}" alt="Place" class="w-full h-auto rounded-lg shadow-md mb-4" id="mainImage" />
+				<!-- Preview Images -->
+				<div class="flex gap-4 py-4 justify-center overflow-x-auto">
+					<img
+						src="lahore.jpg"
+						alt="Preview 1"
+						class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+						(click)="changeImage('lahore.jpg')"
+					/>
+					<img
+						src="lahore2.jpg"
+						alt="Preview 2"
+						class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+						(click)="changeImage('lahore2.jpg')"
+					/>
+					<img
+						src="lahore3.jpg"
+						alt="Preview 3"
+						class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+						(click)="changeImage('lahore3.jpg')"
+					/>
+					<img
+						src="lahore4.jpg"
+						alt="Preview 4"
+						class="size-16 sm:size-20 object-cover rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
+						(click)="changeImage('lahore4.jpg')"
+					/>
+				</div>
+			</div>
+
+			<!-- Description Section -->
+			<div class="w-full md:w-1/2 px-4">
+				<h2 class="text-3xl font-medium font-moranga mb-2">About Lahore</h2>
+				<!-- Reviews/Ratings Section -->
+				<div class="flex items-center mb-4">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-yellow-500">
+						<path
+							fill-rule="evenodd"
+							d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-yellow-500">
+						<path
+							fill-rule="evenodd"
+							d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-yellow-500">
+						<path
+							fill-rule="evenodd"
+							d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-yellow-500">
+						<path
+							fill-rule="evenodd"
+							d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-yellow-500">
+						<path
+							fill-rule="evenodd"
+							d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+					<span class="ml-2 text-gray-600">4.5 (120 reviews)</span>
+					<!-- Rate this Place Button -->
+					<button
+						class="ml-4 px-4 py-2 text-sm font-normal font-moranga text-white bg-yellow-500 hover:bg-yellow-600 rounded-full shadow-md transition-colors duration-300"
+						(click)="openRateModal()"
+					>
+						Rate this place
+						<svg
+							version="1.1"
+							id="Layer_1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							x="0px"
+							y="0px"
+							viewBox="0 0 122.88 122.88"
+							style="enable-background: new 0 0 122.88 122.88"
+							xml:space="preserve"
+							fill="white"
+							class="w-6 h-6 ms-2 inline"
+						>
+							<style type="text/css">
+								.st0 {
+									fill-rule: evenodd;
+									clip-rule: evenodd;
+								}
+							</style>
+							<g>
+								<path
+									class="st0"
+									d="M61.44,0l13.52,10.99l17.2-2.76l6.21,16.28l16.28,6.21l-2.76,17.2l10.99,13.52l-10.99,13.52l2.76,17.2 l-16.28,6.21l-6.21,16.28l-17.2-2.76l-13.52,10.99l-13.52-10.99l-17.2,2.76l-6.21-16.28L8.23,92.16l2.76-17.2L0,61.44l10.99-13.52 l-2.76-17.2l16.28-6.21l6.21-16.28l17.2,2.76L61.44,0L61.44,0z M61.44,39.54l6.34,15.49l16.69,1.24L71.7,67.09l3.98,16.26 l-14.23-8.81l-14.23,8.81l3.98-16.26L38.41,56.27l16.69-1.24L61.44,39.54L61.44,39.54z M61.44,26.71 c19.18,0,34.73,15.55,34.73,34.73c0,19.18-15.55,34.73-34.73,34.73S26.71,80.62,26.71,61.44C26.71,42.26,42.26,26.71,61.44,26.71 L61.44,26.71z"
+								/>
+							</g>
+						</svg>
+					</button>
+				</div>
+				<p class="text-gray-700 font-light font-moranga mb-4">
+					Lahore, the cultural heart of Pakistan, is a city steeped in history and brimming with vibrant life. Known for its stunning Mughal architecture, including the
+					iconic Badshahi Mosque and Lahore Fort, the city offers a glimpse into the grandeur of a bygone era.
+				</p>
+				<p class="text-gray-700 font-light font-moranga mb-6">
+					The bustling streets are filled with the aroma of traditional cuisine, while the gardens, like Shalimar Bagh, provide serene green spaces amidst the urban
+					sprawl. Lahore's rich history, vibrant culture, and warm hospitality make it a must-visit destination.
+				</p>
+				<div>
+					<h3 class="text-lg font-normal font-moranga mb-2">Key Places to Visit:</h3>
+					<ul class="list-disc list-inside text-gray-700">
+						<li>
+							<span class="text-base font-light font-moranga">Badshahi Mosque</span> (<span class="text-sm font-extralight font-moranga"
+								>A majestic Mughal-era mosque known for its grandeur and intricate architecture.</span
+							>)
+						</li>
+						<li>
+							<span class="text-base font-light font-moranga">Lahore Fort</span> (<span class="text-sm font-extralight font-moranga"
+								>A historic fort with stunning palaces, gardens, and museums.</span
+							>)
+						</li>
+						<li>
+							<span class="text-base font-light font-moranga">Shalimar Gardens</span> (<span class="text-sm font-extralight font-moranga"
+								>A beautiful Mughal garden with terraced lawns, fountains, and marble structures.</span
+							>)
+						</li>
+						<li>
+							<span class="text-base font-light font-moranga">Minar-e-Pakistan</span> (<span class="text-sm font-extralight font-moranga"
+								>A national monument symbolizing the independence movement of Pakistan.</span
+							>)
+						</li>
+						<li>
+							<span class="text-base font-light font-moranga">Anarkali Bazaar</span> (<span class="text-sm font-extralight font-moranga"
+								>A bustling market offering traditional clothing, jewelry, and handicrafts.</span
+							>)
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Thumbs-Up Animation Container (Place this somewhere in your main layout file) -->
+<div *ngIf="showThumbsUp" class="thumbs-up-container">
+	<div class="thumbs-up">👍</div>
+	<div class="thumbs-up-message">Thank you for your review!</div>
+</div>
+
+<!-- Rate this Place Modal -->
+<div *ngIf="isRateModalOpen" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50 transition-opacity" (click)="handleOverlayClick($event)">
+	<div class="bg-white rounded-lg p-6 w-full max-w-md mx-4" (click)="$event.stopPropagation()">
+		<div class="flex justify-between items-center mb-4">
+			<h3 class="text-xl font-normal font-moranga text-gray-800">Rate this Place</h3>
+			<button class="text-gray-400 hover:text-gray-600 transition-colors duration-200" (click)="closeRateModal()">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+			</button>
+		</div>
+
+		<!-- Star Rating Inside Modal -->
+		<div class="flex justify-center mb-4">
+			<ng-container *ngFor="let star of [1, 2, 3, 4, 5]; let i = index">
+				<svg
+					(click)="ratePlace(i + 1)"
+					(mouseover)="hoverRating(i + 1)"
+					(mouseleave)="hoverRating(0)"
+					[ngClass]="{
+						'text-yellow-500': i < hoveredRating || i < selectedRating,
+						'text-gray-300': i >= hoveredRating && i >= selectedRating
+					}"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="currentColor"
+					class="size-8 cursor-pointer transition-colors duration-300"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+						clip-rule="evenodd"
+					/>
+				</svg>
+			</ng-container>
+		</div>
+
+		<!-- Textarea for Review -->
+		<textarea
+			[(ngModel)]="reviewText"
+			rows="4"
+			class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+			placeholder="Write your review..."
+			(input)="checkFormValidity()"
+		></textarea>
+
+		<!-- Submit Button -->
+		<div class="flex justify-end mt-4">
+			<button
+				class="px-4 py-2 font-normal font-moranga rounded-md shadow-md transition-colors duration-300"
+				[ngClass]="{
+					'bg-yellow-500 text-white hover:bg-yellow-600': isFormValid,
+					'bg-gray-300 text-gray-500 cursor-not-allowed': !isFormValid
+				}"
+				(click)="submitReview()"
+				[disabled]="!isFormValid"
+			>
+				Submit
+			</button>
+		</div>
+	</div>
+</div>
